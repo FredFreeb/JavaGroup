@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+h2{
+    color: white;
+    text-shadow: 1px 1px 16px#000;
+}
+section,.pair{
+    background-image: linear-gradient(to bottom right, #ff7649, #24abc6);
+}
+section,.impair{
+    background-image: linear-gradient(to top left, #ff7649, #24abc6);
+}

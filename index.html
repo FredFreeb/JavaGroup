@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Exo Groupe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet" >
+</head>
+<body>
+
+<!-- NAVIGATION DANS LES EXOS-->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-around">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Exercices Obligatoires
+                </a>
+            
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#exo1">Exercice 1 : Impôts</a></li>
+                    <li><a class="dropdown-item" href="#exo2">Exercice 2 : Reprographie</a></li>
+                    <li><a class="dropdown-item" href="#exo3">Exercice 3 : Heures</a></li>
+                    <li><a class="dropdown-item" href="#exo4">Exercice 4 : Monnaie</a></li>
+                    <li><a class="dropdown-item" href="#exo5">Exercice 5 : Email</a></li>
+                    <li><a class="dropdown-item" href="#exo6">Exercice 6 : Assurances</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Exercices Falcutatifs
+                </a>
+            
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#exo7">Password</a></li>
+                    <li><a class="dropdown-item" href="#exo8">Le juste prix</a></li>
+                    <li><a class="dropdown-item" href="#exo9">Le pendu</a></li>
+                    <li><a class="dropdown-item" href="#exo10">MasterMind</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="position-relative top-60 pb-3 start-50 translate-middle-x" style="margin-top: 60px;">
+<!-- Exo1 : IMPOTS --> 
+
+    <section id="exo1" class="impair position-relative top-60 pb-3 start-50 translate-middle-x" style="margin-top: 60px;">
+
+            <h2 class="text-center"> Les Impôts </h2>
+            <div class="row">
+                <div class="col-sm3 m-auto mt-4 text-center">
+                    <div class="mb-3">
+                        <h2>Etes vous imposable ?</h2>
+<!-- Radio qui vient récupérer la valeur homme ou femme -->
+                        <label class="form-label">saisissez le genre : </label> 
+                            <input type="radio" name="sexe" value="h" id="homme">
+                        <label for="homme"> Homme </label>
+                            <input type="radio" name="sexe" value="f" id="Femme">
+                        <label for="Femme"> Femme </label>
+                    </div>
+<!-- Input qui vient récupérer l'âge -->
+                    <div class="mb-3">
+                        <label for="age" class="form-label m-auto"> saisissez l'âge : </label> 
+                        <input type="number" class="form col-sm-1" id="age">
+<!-- Bouton de déclenchement -->
+                    </div>
+                    <button type="submit" id="bouton" class="btn btn-primary m-auto">Valider</button>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+<hr>
+<!-- Exo 2 : REPROGRAPHIE-->
+
+    <section id="exo2" class="pair position-relative top-60 start-50 pb-3 translate-middle-x" style="margin-top: 60px;">
+        <div class="container">
+            <h2 class="text-center"> Reprographie </h2>
+            <div class="row">
+                <div class="col-sm3 m-auto mt-4 text-center">
+                    <div class="mb-3">
+                        <h2>Combien ça coute ?</h2>
+<!-- Input qui vient récupérer le nombre de copies -->
+                <div class="mb-3">
+                    <label for="copie" class="form-label">saisissez le nombre de copies souhaitée(s): </label> 
+                    <input  type="number" class="form col-sm-1" id="copie">
+                </div>
+                <label type="form-label" >Les 10 premières plein pot, 1cts de réduction sur les 20 suivantes et à partir de la 30ème c'est 8cts...  </label>
+            </div>
+            <button type="submit" id="bouton2" class="btn btn-primary m-auto">Valider</button>
+    </section>
+
+<hr>
+<!-- Exo 3 -->
+
+    <section id="exo3" class="impair position-relative top-60 pb-3 start-50 translate-middle-x" style="margin-top: 60px;">
+        <div class="container">
+            <h2 class="text-center"> L'heure </h2>
+            <div class="row">
+                <div class="col-sm3 m-auto mt-4 text-center ">
+                    <div class="mb-3">
+                        <h2>Quelle heure est il?</h2>
+<!-- Input qui vient récupérer le nombre de copies -->
+                <div class="mb-3">
+                    <label for="copie" class="form-label">Quelle heure est t'il dans une seconde? </label> 
+                    <input  type="number" class="form col-sm-1" id="h">
+                    <input  type="number" class="form col-sm-1" id="min">
+                    <input  type="number" class="form col-sm-1" id="sec">
+                </div>
+                <label type="form-label" > </label>
+            </div>
+        <button type="submit" id="bouton3" class="btn btn-primary m-auto">Valider</button>
+    </section>
+
+<hr>
+
+<!-- Exo 4 -->
+
+    <section id="exo4" class="pair position-relative top-60 pb-3 start-50 translate-middle-x" style="margin-top: 60px;">
+        <div class="container">
+            <h2 class="text-center"> Je vous dois combien ? </h2>
+            <div class="row">
+                <div class="col-sm3 m-auto mt-4 text-center">
+                    <div class="mb-3">
+                        <h2>Par ici la monnaie</h2>
+    <!-- Input qui vient récupérer le nombre de copies -->
+                <div class="mb-3">
+                    <label for="clientMoney" class="form-label">Combien me donnez vous ? </label> 
+                    <input  type="number" class="form" id="clientMoney">
+                </div>
+                <div class="mb-3">
+                    <label for="ticketAmount" class="form-label">Votre facture est de : </label> 
+                    <input  type="number" class="form" id="ticketAmount">
+                </div>
+                <label type="form-label" > </label>
+            </div>
+        <button type="submit" id="bouton4" class="btn btn-primary m-auto">Valider</button>
+    </section>
+
+<hr>
+
+<!-- Exo 5 -->
+
+    <section id="exo5" class="impair position-relative top-60 pb-3 start-50 translate-middle-x" style="margin-top: 60px;">
+        <div class="container">
+            <h2 class="text-center"> Email </h2>
+            <div class="row">
+                <div class="col-sm3 m-auto mt-4 text-center">
+                    <div class="mb-3">
+                        <h2>Votre adresse est elle viable?</h2>
+    <!-- Input qui vient récupérer le nombre de copies -->
+                <div class="mb-3">
+                    <label for="copie" class="form-label">Veuillez entrez votre adresse mail, s'il vous plaît? </label> 
+                    <input id="textBar" type="text" placeholder="Saisissez votre email">
+                </div>
+                    <div class="message" id="message"></div>
+                <label type="form-label" > </label>
+            </div>
+    </section>
+
+<hr>
+
+<!-- Exo 6 -->
+
+    <section id="exo6" class="pair position-relative top-60 pb-3 start-50 translate-middle-x" style="margin-top: 60px;">
+        <div class="container">
+            <h2 class="text-center"> Assurances </h2>
+            <div class="row">
+                <div class="col-sm3 m-auto mt-4 text-center">
+                    <div class="mb-3">
+                        <h2>Au peu chère Assurances</h2>
+    <!-- Input qui vient récupérer le nombre de copies -->
+                <div class="mb-1">
+                    <label for="copie" class="form-label">Veuillez remplir le formulaire :  </label> 
+                    <input  type="number" class="form" id="ageConducteur" placeholder="Quel est l'âge du conducteur?">
+                    <input  type="number" class="form" id="accident" placeholder="Avez eu des accidents?">
+                    <input  type="number" class="form" id="temPermis" placeholder="Année de permis?">
+                    <input  type="number" class="form" id="fidel" placeholder="Fidèle chez nous, depuis?">
+                </div>
+                <label type="form-label" > </label>
+            </div>
+            <button type="submit" id="bouton6" class="btn btn-primary m-auto">Valider</button>
+    </section>
+
+<hr>
+</main>
+<!-- Script Bootstrap + Scripts JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"  crossorigin="anonymous" ></script>
+
+<script src="./javascript/exo1.js"></script>
+<script src="./javascript/exo2.js"></script>
+<script src="./javascript/exo3.js"></script>
+<script src="./javascript/exo4.js"></script>
+<script src="./javascript/exo5.js"></script>
+<script src="./javascript/exo6.js"></script>
+</body>
+
+</html>
